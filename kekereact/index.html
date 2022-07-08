@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kekembas Students</title>
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="kekembas-students"></div>
+  <button id="load-info">Load Student List</button>
+
+  <script>
+    const firstName = document.getElementById('first_name');
+    const lastName = document.getElementById('last_name');
+    const idNumber = document.getElementById('id');
+
+    const loadStudentList{}
+      const listURL = `https://kekambas-bs.herokuapp.com/kekambas`;
+      fetch(listURL)
+        .then(response => response.json())
+        .then(responseJson => {
+          for (let { student } of responseJson) {
+            const firstName = document.createElement('first_name');
+            const lastName = document.createElement('last_name');
+            const idNumber = document.createElement('id');
+            listURL.innerText = student;
+          }
+        })
+    }
+
+  </script>
+</body>
+
+</html>
